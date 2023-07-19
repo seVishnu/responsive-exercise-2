@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300,400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-      <div class="container container-nav">
+      <div class="container container-flex">
         <div class="site-name">
           <h1>Life unraveled</h1>
           <p class="subtitle">minimal issues and improved experience</p>
@@ -32,7 +32,7 @@
       </div>
     </header>
 
-    <div class="container">
+    <div class="container container-flex">
       <main>
         <article class="article-featured">
           <h2 class="article-title">Finding simplicity in life</h2>
@@ -43,20 +43,27 @@
           />
           <p class="article-info">July 23, 2019 | 3 comments</p>
           <p class="article-body">
-            Life can get complicated really quickly, but it doesn't have to be!
-            There are many ways to simplify your life, a few of which we've
-            explored in the past. This week we're taking a bit of a approach
-            though, in how you can find simplicity in the life you already
-            living.
+            <strong>Life can get complicated really quickly</strong>, but it
+            doesn't have to be! There are many ways to simplify your life,<a
+              href=""
+            >
+              a few of which we've explored in the past.
+            </a>
+            This week we're taking a bit of a approach though, in how you can
+            find simplicity in the life you already living.
           </p>
           <a class="article-read-more" href="">continue reading</a>
         </article>
 
         <article class="article-recent">
           <article class="article-recent-main">
-            <h2 class="article-title"></h2>
-            <p class="article-body"></p>
-            <a class="article-read-more" href=""></a>
+            <h2 class="article-title">Keeping cooking simple</h2>
+            <p class="article-body">
+              Food is a very important part of everyone's life. If you want to
+              be healthy, you have to eat healthy. One of the easiest ways to do
+              that is to keep your cooking nice and simple.
+            </p>
+            <a class="article-read-more" href="">continue reading</a>
           </article>
           <article class="article-recent-secondary">
             <img src="" alt="" class="article-image" />
@@ -70,8 +77,12 @@
             <a class="article-read-more" href=""></a>
           </article>
           <article class="article-recent-secondary">
-            <img src="" alt="" class="article-image" />
-            <p class="article-info"></p>
+            <img
+              src="./assets/arch.jpg"
+              alt="architecture"
+              class="article-image"
+            />
+            <p class="article-info">July 19, 2019 | 3 comments</p>
           </article>
         </article>
         <article class="article-recent">
@@ -81,30 +92,64 @@
             <a class="article-read-more" href=""></a>
           </article>
           <article class="article-recent-secondary">
-            <img src="" alt="" class="article-image" />
-            <p class="article-info"></p>
+            <img
+              src="./assets/arch.jpg"
+              alt="architecture"
+              class="article-image"
+            />
+            <p class="article-info">July 19, 2019 | 3 comments</p>
+          </article>
+        </article>
+        <article class="article-recent">
+          <article class="article-recent-main">
+            <h2 class="article-title"></h2>
+            <p class="article-body"></p>
+            <a class="article-read-more" href=""></a>
+          </article>
+          <article class="article-recent-secondary">
+            <img
+              src="./assets/arch.jpg"
+              alt="architecture"
+              class="article-image"
+            />
+            <p class="article-info">July 19, 2019 | 3 comments</p>
           </article>
         </article>
       </main>
       <aside class="sidebar">
         <div class="sidebar-widget">
-          <h2 class="widget-title"></h2>
-          <img class="widget-image" alt="" />
-          <p class="widget-body"></p>
+          <h2 class="widget-title">About me</h2>
+          <img class="widget-image" alt="portrait" src="./assets/port.jpg" />
+          <p class="widget-body">
+            I find life better, and I'm happier, when things are nice and
+            simple.
+          </p>
         </div>
         <div class="sidebar-widget">
-          <h2 class="widget-title"></h2>
+          <h2 class="widget-title">Recent Posts</h2>
           <div class="widget-recent-posts">
-            <h3 class="widget-recent-post-title"></h3>
-            <img class="widget-image" alt="" />
+            <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+            <img
+              class="widget-image"
+              alt="architecture"
+              src="./assets/arch.jpg"
+            />
           </div>
           <div class="widget-recent-posts">
-            <h3 class="widget-recent-post-title"></h3>
-            <img class="widget-image" alt="" />
+            <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+            <img
+              class="widget-image"
+              alt="architecture"
+              src="./assets/arch.jpg"
+            />
           </div>
           <div class="widget-recent-posts">
-            <h3 class="widget-recent-post-title"></h3>
-            <img class="widget-image" alt="" />
+            <h3 class="widget-recent-post-title">Keeping cooking simple</h3>
+            <img
+              class="widget-image"
+              alt="architecture"
+              src="./assets/arch.jpg"
+            />
           </div>
         </div>
       </aside>
