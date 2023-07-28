@@ -56,6 +56,14 @@ strong {
 .article-info {
   margin: 2em 0;
 }
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1rem;
+}
+.widget-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
 /*Layout*/
 .container {
   width: 90%;
@@ -71,16 +79,19 @@ header {
   background-color: #f8f8f8;
   padding: 2em 0;
   text-align: center;
+  margin-bottom: 2em;
 }
 @media screen and (min-width: 675px) {
   .container-flex {
     flex-direction: row;
   }
   main {
-    width: 75%;
+    width: 70%;
   }
   aside {
-    width: 20%;
+    width: 25%;
+    min-width: 200px;
+    margin-left: 1em;
   }
 }
 nav ul {
@@ -137,4 +148,48 @@ nav a:focus {
 }
 .article-recent-secondary {
   order: 1;
+}
+
+@media screen and (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article-recent-main {
+    width: 68%;
+  }
+  .article-recent-secondary {
+    width: 30%;
+  }
+  .article-image {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-image {
+    order: -2;
+  }
+  .article-info {
+    order: -1;
+  }
+}
+
+/*Widgets*/
+
+.sidebar-widget {
+  border: 20px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.widget-recent-posts {
+  display: flex;
+  flex-direction: column;
+}
+.widget-image {
+  order: -1;
 }
