@@ -8,6 +8,12 @@ img {
   max-width: 100%;
   display: block;
 }
+.image-full {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
 h1,
 h2,
 h3 {
@@ -19,6 +25,9 @@ h3 {
 h1 {
   font-size: 2rem;
   margin: 0;
+}
+h3 {
+  color: #1792d2;
 }
 a {
   color: #1792d2;
@@ -60,6 +69,9 @@ strong {
 .widget-recent-post-title {
   font-size: 1rem;
 }
+.widget-recent-post-title {
+  color: #143774;
+}
 .widget-title {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -80,6 +92,12 @@ header {
   padding: 2em 0;
   text-align: center;
   margin-bottom: 2em;
+}
+footer {
+  background-color: #143774;
+  color: #fff;
+  text-align: center;
+  padding: 3em 0;
 }
 @media screen and (min-width: 675px) {
   .container-flex {
@@ -189,6 +207,12 @@ nav a:focus {
 .widget-recent-posts {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 1em;
+}
+.widget-recent-posts:last-child {
+  border: 0;
+  margin: 0;
 }
 .widget-image {
   order: -1;
